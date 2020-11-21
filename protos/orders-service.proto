@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "get-orders-request.proto";
+import "get-orders-response.proto";
+
+package Orders;
+
+service OrdersService {
+    rpc GetOrders (GetOrdersRequest) returns (GetOrdersResponse);
+}

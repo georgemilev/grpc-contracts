@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "order-types.proto";
+
+package Orders;
+
+message GetOrdersRequest {
+    int32 page_number = 1;
+    int32 count = 2;
+    OrderTypes order_type = 3;
+}

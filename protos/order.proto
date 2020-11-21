@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "order-types.proto";
+
+package Orders;
+
+message Order {
+    int32 order_number = 1;
+    OrderTypes order_type = 2;
+    google.protobuf.Timestamp order_date = 3;
+}

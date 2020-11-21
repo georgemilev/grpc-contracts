@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "order.proto";
+
+package Orders;
+
+message GetOrdersResponse {
+    repeated Order orders = 1;
+}
